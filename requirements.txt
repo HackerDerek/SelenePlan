@@ -1,0 +1,13 @@
+asyncio
+httpx
+requests
+openpyxl
+bs4
+pandas
+ping3
+prompt
+PrettyTable
+pyyaml
+prompt_toolkit
+cryptography
+colorama

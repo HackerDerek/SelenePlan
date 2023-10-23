@@ -1,0 +1,29 @@
+
+fofa_api:
+    email: xspama@163.com                                       # fofa_api邮箱
+    key: c79ca4e373f7cf60b99a2d1f72147cc7                       # fofa_api key
+    fields: ip,host,port,domain   # fofa导出的字段,title,header,country,city,icp
+    size: 1000                                                   # fofa每页导出的数据长度
+    page: 2                                                     # fafa导出页数
+
+http_data:
+    headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+    }
+    timeout: 4
+
+database:
+  host: localhost  # 数据库主机名
+  port: 3306       # 数据库端口号
+  username: myuser # 数据库用户名
+  password: mypass # 数据库密码
+
+settings:
+  debug: true             # 是否启用调试模式
+  log_file: logs/app.log  # 日志文件路径
+
+# 设置代理  proxy: 127.0.0.1:7890  
+proxy: None
+
+# 最大并发数
+coroutine: 1000
