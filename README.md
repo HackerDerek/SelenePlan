@@ -8,7 +8,8 @@
     配置：config.yaml
     使用：python main.py
 
-![屏幕截图 2023-10-24 000603](https://github.com/qiyeNuLl/SelenePlan/assets/90974075/088adaa8-9b2a-4cbe-af9b-83acb765ff78)
+![屏幕截图 2023-10-24 000603](https://github.com/qiyeNuLl/SelenePlan/assets/90974075/add300e5-edac-4e5a-93d3-a39cdf467662)
+
 
 # 免责声明
 本工具仅面向拥有合法授权的渗透测试安全人员及进行常规操作的网络运维人员，用户可在取得足够合法授权且非商用的前提下进行下载、复制、传播或使用。
