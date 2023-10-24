@@ -2,8 +2,8 @@
 import re
 import json
 import requests
-import Tool
-import NetWork
+import tools.GlobalTool as Tool
+import tools.HttpTool as NetWork
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -85,12 +85,11 @@ def vul_getFaceCapture(url):
 
 def run():
     OUTDIR = "result/大华智慧园区综合管理平台"
-    h = Tool.Handler()
     # 获取当前日期和时间
     formatted_datetime = Tool.getime()
     file = "dat.txt"
     urls = Tool.read_host_file(file)
-    h.mkdir(OUTDIR)
+    Tool.mkdir(OUTDIR)
     help()
     num = int(input("执行的指令: "))
 
@@ -99,7 +98,7 @@ def run():
         for url in urls:
             item = vul_devicePoint_addImgIco(url)
             data.append(item)
-        s = NetWork.SiteScanner()
+        s = NetWork.HttpTool()
         y = s.async_httpx_start(data)
 
         res = []
@@ -125,7 +124,7 @@ def run():
         for url in urls:
             item = vul_publishing(url)
             data.append(item)
-        s = NetWork.SiteScanner()
+        s = NetWork.HttpTool()
         y = s.async_httpx_start(data)
 
         res = []
@@ -150,7 +149,7 @@ def run():
         for url in urls:
             item = vul_getuser(url)
             data.append(item)
-        s = NetWork.SiteScanner()
+        s = NetWork.HttpTool()
         y = s.async_httpx_start(data)
 
         res = []
@@ -181,7 +180,7 @@ def run():
         for url in urls:
             item = vul_getFaceCapture(url)
             data.append(item)
-        s = NetWork.SiteScanner()
+        s = NetWork.HttpTool()
         y = s.async_httpx_start(data)
 
         res = []
