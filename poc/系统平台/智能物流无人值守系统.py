@@ -10,8 +10,8 @@ from tools.WebShellLoder import WebShellLoder
 def help():
     print('''
     fofa: "智能物流无人值守系统"
-        1. 易思无人值守智能物流系统/Sys_ReportFile/ImportReport接口任意文件上传漏洞, 批量测试, 冰蝎aspx，默认密钥 rebeyond
-                                                                易思智能物流无人值守系统5.0
+        1. 易思无人值守智能物流系统/Sys_ReportFile/ImportReport接口任意文件上传漏洞, 批量测试, 哥斯拉webshell, 
+        密码:Tas9er 密钥:27 有效载荷:CShapDynamicPayload 加密器:CSHAP_AES_BASE64, 易思智能物流无人值守系统5.0
     x. 退出
     ''')
 
